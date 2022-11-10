@@ -1,0 +1,48 @@
+Encontrarán, junto con este archivo, varias imágenes de referencias del resultado que tienen que lograr, así como también un video en donde se ven muchos detalles y hasta les muestro cómo quedaría si desactivamos el CSS, algo que es importante que revisen.
+
+Al igual que sucedió con el ejercicio de los juegos de Mario Kart y Mortal Kombat, nuevamente se busca que realicen un único HTML con más de un archivo CSS, pero esta vez serán 3 archivos CSS.
+
+El primero deberá nombrarse "estilos.css", y allí deberán incorporar las reglas de estilo para lograr que la página se vea como la diseñé yo para el Bootcamp y cuyas imágenes y video les paso de referencia.
+
+Adicionalmente a esto, deberán crear otros 2 archivos CSS vacíos y aplicar en ellos otros estilos para lograr 2 diseños adicionales totalmente distintos, basados en 2 de las siguientes 4 temáticas:
+
+Retro (estilos-retro.css)
+Futuro (estilos-futuro.css)
+Películas (estilos-peliculas.css)
+Urbano (estilos-urbano.css)
+
+De allí deberán elegir 2 temáticas y generar los 2 archivos de CSS adicionales con los nombres que se indican entre paréntesis.
+
+Para hacer esto les sugiero navegar por distintos sitios, buscando ideas.
+
+Elegir o generar una paleta de colores desde el sitio https://coolors.co/. Copiar en el CSS los colores de la paleta, a modo de comentarios, con el código hexadecimal y nombre de cada color. Ej:
+
+#252525 gris oscuro
+#401515 rojo oscuro
+#fdedd8 naranja claro
+
+Deben utilizar, como mínimo, las propiedades de CSS necesarias para establecer:
+- imágenes de fondo
+- sombras de texto y/o caja
+- bordes redondeados
+
+Esto es algo muy distinto a lo que hicieron cuando hicieron el ejercicio de los juegos, en donde definieron 2 archivos CSS distintos, porque en ese momento habían elegido el diseño ustedes, sin ningún tipo de punto de partida, mientras que ahora lo que se busca es que a partir de cierta temática tengan que pensar qué propuestas le harían a un cliente que simplemente les dijo que para su página quiere un diseño futurista, o quizás es para una obra social, veterinaria, librería, estudio de abogados, etc.
+
+Los 3 diseños (el que harán basado en el mío, y los otros dos) tienen que ser muy distintos. Esto es mucho más que simplemente cambiar colores de bordes o de la tipografía. Es momento de jugar, abrir la mente, utilizar la creatividad. Traten de pedir opiniones en su casa o a conocidos, el feedback que reciban puede ser muy constructivo.
+
+Aclaración: poner simplemente imágenes de fondo, buscando simplemente cumplir la consigna de generar estilos distintos, no se tomará como válido si el diseño no está cuidado. Es decir, no podemos poner una cara de fondo y arriba de la misma poner un input tapando un ojo, queda claramente mal. Las imágenes de fondo permiten repetirse, cambiar su ubicación, etc, para que todo quede bien situado. Cuiden los detalles y dedíquenle tiempo. Los diseños tienen que verse bien al cambiar el tamaño de la ventana.
+
+Por último, deberán agregar al principio del documento un botón (input o button) que permita pasar por los 3 estilos, de forma alternada. De esta manera, cuando la página se cargue, deberá hacerlo con los estilos de CSS base, es decir, los diseñados por mí. Al presionar el botón se deberán cargar los estilos de uno de los diseños elaborados or ustedes. Luego, al presionarlo de nuevo, deberán aplicarse los estilos del otro archivo adicional que ustedes agreguen. Para finalizar, al volver a presionar el botón se deberá cargar nuevamente el primer archivo CSS y así comienza el ciclo de nuevo (css1 --> css2 --> css3 --> css1 --> css2, etc...).
+
+Bonus 1: Adicionar otro botón que contenga una imagen que represente algo "aleatorio" (ej: dados, pero pueden buscar otra cosa) que, al ser presionado, aplique uno de los estilos de forma aleatoria o los quite todos.
+
+Bonus 2: Agregar un botón con el texto "Recordar" que, al ser presionado, debe lograr que el CSS aplicado actualmente se recuerde si se vuelve a cargar la página o se ingresa más tarde (Tip: LocalStorage). Se le deberán aplicar estilos al botón para que luego de ser presionado parezca quedar "hundido", lo cual supondría que se están recordando los estilos elegidos. Al presionarlo de nuevo debe visualizarse igual que al principio, es decir, levantado, no hundido y eliminar la funcionalidad de recordar los estilos.
+
+Bonus 3: Agregar un elemento <select> con 4 elementos <option>, uno representando cada estilo, y otro, sin estilos. Programarlos para que, al ser clickeados, quiten o carguen los estilos correspondientes. Si, al momento de elegir la opción, está hundido el botón de "recordar" del punto anterior, debe almacenarse el valor elegido en el <option>, para que al recargarse la página se utilice el mismo estilo, y quede seleccionado el <option> correspondiente.
+
+Bonus 4: Replicar el paso anterior con elementos input radio.
+
+Tip 1: miren el video con mucha atención, analizando lo que sucede en todo momento con detalle.
+Tip 2: prueben TODO, funcionamiento de labels, y cada elemento de formulario, etc...
+Tip 3: asegúrense de que la página valide.
+Tip 4: traten de no repetir mucho código. Cuando esto suceda, noten el patrón repetido a ver cómo lo pueden resolver.

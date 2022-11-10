@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <!-- Estilos -->
+    <link rel="stylesheet" href="css/estilos.css" class="estilos-link">
+    <!-- <link rel="stylesheet" href="css/estilos-retro.css" class="estilos-link">
+    <link rel="stylesheet" href="css/estilos-futuro.css" class="estilos-link"> -->
+    <title>Afiliación</title>
+</head>
+<body>
+    <div class="bonus-div">
+        <!-- Punto final -->
+        <input type="button" value="Cambiar estilo" id="estilos-btn">
+        <!-- Bonus 1 -->
+        <input type="button" value="Random" id="random-btn">
+        <!-- Bonus 2 -->
+        <input type="button" value="Recordar" id="recordar-btn">
+        <!-- Bonus 3 -->
+        <select name="bonus-3" id="bonus-3">
+            <option value="original" selected>Original</option>
+            <option value="retro">Retro</option>
+            <option value="futuro">Futuro</option>
+            <option value="sin-estilo">Sin Estilo</option>
+        </select>
+        <!-- Bonus 4 -->
+        <input type="radio" class="bonus-4" name="bonus-4" id="original-4" checked>
+        <span>Original</span> 
+        <input type="radio" class="bonus-4" name="bonus-4" id="retro-4">
+        <span>Retro</span>
+        <input type="radio" class="bonus-4" name="bonus-4" id="futuro-4">
+        <span>Futuro</span> 
+        <input type="radio" class="bonus-4" name="bonus-4" id="sin-estilo4">
+        <span>Sin Estilo</span> 
+    </div>
+    <!-- <div id="form-div"> -->
+    <form id="form">
+        <h1>Vení al Gym! 💪🏼</h1>
+        <div class="fieldset-container-1">
+            <fieldset>
+                <legend>🙋‍♂️ D<span>atos</span> P<span>ersonales</span> 👀</legend>
+                <div>
+                    <label for="nombre">Nombre: *</label>
+                    <input type="text" name="nombre" required autofocus>
+                </div>
+                <div>
+                    <label for="apellido">Apellido: *</label>
+                    <input type="text" name="apellido" required>
+                </div>
+                <div>
+                    <label for="documento">Documento: *</label>
+                    <input type="text" name="documento" required>
+                </div>
+                <div>
+                    <label for="nacionalidad">Nacionalidad: *</label>
+                    <select name="nacionalidad" required>
+                        <option value="">- Seleccionar -</option>
+                        <option value="argentina">Argentina</option>
+                        <option value="brasileña">Brasileña</option>
+                        <option value="uruguaya">Uruguaya</option>
+                        <option value="otra">Otra</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="textarea">Contanos un poco de vos ...</label>
+                <textarea name="textarea" id="xd"></textarea>
+                </div>
+                <div>
+                    <label for="sexo">Sexo: *</label>
+                    <input type="radio" name="sexo" checked required>
+                    <span>Femenino</span>
+                    <input type="radio" name="sexo" required>
+                    <span>Masculino</span>
+                    <input type="radio" name="sexo" required>
+                    <span>Otro</span>
+                </div>
+            </fieldset>
+        </div>
+        <hr class="border-dotted" style="display: none;">
+        
+        <div class="fieldset-container-2">
+            <fieldset>
+                <legend>📱 D<span>atos de</span> c<span>ontacto</span> 📩</legend>
+                <div>
+                    <label for="telefono">Teléfono:</label>
+                    <input type="number" name="telefono" placeholder="Código de área y número">
+                </div>
+                <div>
+                    <label for="email">Dirección de correo electrónico: *</label>
+                    <input type="email" name="email" placeholder="Ej: mail@gmail.com" required>
+                </div>
+            </fieldset>
+        </div>
+        <hr class="border-dotted" style="display: none;">
+        
+        <div class="fieldset-container-3">
+            <fieldset>
+                <legend>🚴🏼 A<span>ctividades</span> 🤸‍♂️</legend>
+                <p class="actividades-p">Por favor, indicá cuáles actividades te interesan.</p>
+                <div>
+                    <p>Sede Palermo:</p>
+                    <input type="checkbox" name="basquet">
+                    <span>Básquet</span>
+                    <input type="checkbox" name="boxeo">
+                    <span>Boxeo</span> 
+                    <input type="checkbox" name="futbol">
+                    <span>Fútbol</span>
+                    <input type="checkbox" name="tenis">
+                    <span>Tenis</span>
+                </div>
+                <div>
+                    <p>Sede Rosario:</p>
+                    <input type="checkbox" name="basquet">
+                    <span>Básquet</span> 
+                    <input type="checkbox" name="futbol">
+                    <span>Fútbol</span>
+                    <input type="checkbox" name="rugby">
+                    <span>Rugby</span>
+                    <input type="checkbox" name="voley">
+                    <span>Voley</span>
+                </div>
+            </fieldset>
+        </div>
+        
+        <div class="terms">
+            <div class="conditions">
+                <input type="checkbox" required>
+                <span>Acepto las condiciones*</span>
+            </div>
+            <div class="news">
+                <input type="checkbox" checked>
+                <span>Deseo recibir novedades</span>
+            </div>
+            <p>*: campo obligatorio.</p>
+        </div>
+        
+        <input type="submit" value="Iniciar afiliación">
+        <input type="button" value="Restablecer" id="reset-btn">
+    </form>
+    <!-- </div> -->
+    <script src="js/index.js" id="script"></script>
+</body>
+</html>

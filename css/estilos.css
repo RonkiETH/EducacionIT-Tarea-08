@@ -1,0 +1,202 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: #1F2023;
+    text-align: center;
+}
+
+/* Estilos del formulario*/
+#form-div{
+    width: 50%;
+    margin: 0px auto;
+    /* display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap; */
+}
+
+form{
+    width: 50%;
+    margin: 0px auto;
+    font-family: 'Roboto';
+}
+
+h1{
+    color: #fff;
+    font-family: 'Poppins';
+    font-weight: 900;
+    border-bottom: 15px solid #4D6D63;
+    border-top: 15px solid #4D6D63;
+    border-right: 15px solid transparent;
+    border-left: 15px solid transparent;
+}
+
+/* Estilos fieldset */
+.fieldset-container-1{
+    margin-top: 30px;
+}
+
+.fieldset-container-1,
+.fieldset-container-2{
+    margin-bottom: 30px;
+}
+
+.fieldset-container-3{
+    margin-top: 20px;
+    text-align: start;
+}
+
+fieldset{
+    padding: 30px;
+    background-color: #D6E1DF;
+    border: 2px solid #587A6F;
+    border-radius: 4px;
+}
+
+legend{
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: start;
+    background-color: #4A6963;
+    color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+legend span{
+    font-size: small;
+}
+
+form label{
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="submit"],
+input[type="button"],
+select,
+textarea{
+    width: 75%;
+    border: 1px solid #587A6F;
+    border-radius: 4px;
+    padding: 10px;
+    font-family: 'Roboto';
+    color: #4D6D63;
+    text-align: right;
+    font-size: medium;
+}
+
+input[type="submit"],
+input[type="button"]{
+    background-color: rgba(77, 109, 99, 0.5);
+    color: #A6C1B9;
+    font-size: medium;
+    border: 1px solid #4D6D63;
+    margin: 10px;
+    width: auto;
+    cursor: pointer;
+}
+
+select{
+    text-align: left;
+}
+
+input::placeholder{
+    color: #4D6D63;
+    text-align: end;
+    font-size: medium;
+}
+
+textarea{
+    min-width: 75%;
+    max-width: 75%;
+    min-height: 150px;
+    height: 150px;
+}
+
+/* Borde de puntos, el cual es un hr que tiene display none en el html, por lo que si quitamos el estilo, ya no se muestra */
+.border-dotted{
+    display: block !important;
+    border: 15px dotted #A6C1B9;
+    border-top: none;
+    width: 30%;
+}
+
+/* Ajuste de tamaños para los párrafos */
+.actividades-p{
+    font-size: small;
+}
+
+.terms{
+    text-align: start;
+    color: #fff;
+}
+
+.terms p{
+    font-size: small;
+}
+
+.conditions{
+    margin-bottom: 10px;
+}
+
+/* Efectos visuales*/
+input[type="submit"]:hover,
+input[type="button"]:hover{
+    background-color: #D6E1DF;
+    color: #4D6D63;
+}
+
+h1::selection,
+legend::selection,
+legend span::selection,
+.terms span::selection{
+    background-color: #A8BEBC;
+}
+
+label::selection,
+input::selection,
+select::selection,
+fieldset span::selection,
+div p::selection,
+div::selection{
+    background-color: #B1C3C0;
+}
+
+/* Botón que cambia estilos */
+.bonus-div{
+    display: block !important;
+    text-align: start;
+    margin: 30px;
+}
+
+.bonus-div select{
+    width: auto;
+    margin: 10px;
+    background-color: rgba(77, 109, 99, 0.5);
+    color: #A6C1B9;
+    font-size: medium;
+    border: 1px solid #4D6D63;
+    cursor: pointer;
+}
+
+.bonus-div option{
+    background-color: #4d6d63;
+}
+
+.bonus-div span{
+    color: #A6C1B9;
+    font-family: 'Roboto';
+}
+
+#random-btn{
+    color: transparent;
+    background-image: url('../img/dados.jpg');
+    background-position: center;
+    background-size: contain;
+}
+
