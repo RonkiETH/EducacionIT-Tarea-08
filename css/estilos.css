@@ -168,13 +168,13 @@ div::selection{
 }
 
 /* Botón que cambia estilos */
-.bonus-div{
+#bonus-div{
     display: block !important;
     text-align: start;
     margin: 30px;
 }
 
-.bonus-div select{
+#bonus-div select{
     width: auto;
     margin: 10px;
     background-color: rgba(77, 109, 99, 0.5);
@@ -184,11 +184,11 @@ div::selection{
     cursor: pointer;
 }
 
-.bonus-div option{
+#bonus-div option{
     background-color: #4d6d63;
 }
 
-.bonus-div span{
+#bonus-div span{
     color: #A6C1B9;
     font-family: 'Roboto';
 }

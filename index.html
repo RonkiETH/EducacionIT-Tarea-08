@@ -15,7 +15,7 @@
     <title>Afiliación</title>
 </head>
 <body>
-    <div class="bonus-div">
+    <div id="bonus-div">
         <!-- Punto final -->
         <input type="button" value="Cambiar estilo" id="estilos-btn">
         <!-- Bonus 1 -->
@@ -47,19 +47,19 @@
                 <legend>🙋‍♂️ D<span>atos</span> P<span>ersonales</span> 👀</legend>
                 <div>
                     <label for="nombre">Nombre: *</label>
-                    <input type="text" name="nombre" required autofocus>
+                    <input type="text" class="form-input" name="nombre" required autofocus>
                 </div>
                 <div>
                     <label for="apellido">Apellido: *</label>
-                    <input type="text" name="apellido" required>
+                    <input type="text" class="form-input" name="apellido" required>
                 </div>
                 <div>
                     <label for="documento">Documento: *</label>
-                    <input type="text" name="documento" required>
+                    <input type="text" class="form-input" name="documento" required>
                 </div>
                 <div>
                     <label for="nacionalidad">Nacionalidad: *</label>
-                    <select name="nacionalidad" required>
+                    <select name="nacionalidad" id="select-form" required>
                         <option value="">- Seleccionar -</option>
                         <option value="argentina">Argentina</option>
                         <option value="brasileña">Brasileña</option>
@@ -69,15 +69,15 @@
                 </div>
                 <div>
                     <label for="textarea">Contanos un poco de vos ...</label>
-                <textarea name="textarea" id="xd"></textarea>
+                <textarea name="textarea" id="textarea-form"></textarea>
                 </div>
                 <div>
                     <label for="sexo">Sexo: *</label>
-                    <input type="radio" name="sexo" checked required>
+                    <input type="radio" class="form-input" name="sexo" checked required>
                     <span>Femenino</span>
-                    <input type="radio" name="sexo" required>
+                    <input type="radio" class="form-input" name="sexo" required>
                     <span>Masculino</span>
-                    <input type="radio" name="sexo" required>
+                    <input type="radio" class="form-input" name="sexo" required>
                     <span>Otro</span>
                 </div>
             </fieldset>
@@ -89,11 +89,11 @@
                 <legend>📱 D<span>atos de</span> c<span>ontacto</span> 📩</legend>
                 <div>
                     <label for="telefono">Teléfono:</label>
-                    <input type="number" name="telefono" placeholder="Código de área y número">
+                    <input type="number" class="form-input" name="telefono" placeholder="Código de área y número">
                 </div>
                 <div>
                     <label for="email">Dirección de correo electrónico: *</label>
-                    <input type="email" name="email" placeholder="Ej: mail@gmail.com" required>
+                    <input type="email" class="form-input" name="email" placeholder="Ej: mail@gmail.com" required>
                 </div>
             </fieldset>
         </div>
@@ -105,24 +105,24 @@
                 <p class="actividades-p">Por favor, indicá cuáles actividades te interesan.</p>
                 <div>
                     <p>Sede Palermo:</p>
-                    <input type="checkbox" name="basquet">
+                    <input type="checkbox" class="form-input" name="basquet">
                     <span>Básquet</span>
-                    <input type="checkbox" name="boxeo">
+                    <input type="checkbox" class="form-input" name="boxeo">
                     <span>Boxeo</span> 
-                    <input type="checkbox" name="futbol">
+                    <input type="checkbox" class="form-input" name="futbol">
                     <span>Fútbol</span>
-                    <input type="checkbox" name="tenis">
+                    <input type="checkbox" class="form-input" name="tenis">
                     <span>Tenis</span>
                 </div>
                 <div>
                     <p>Sede Rosario:</p>
-                    <input type="checkbox" name="basquet">
+                    <input type="checkbox" class="form-input" name="basquet">
                     <span>Básquet</span> 
-                    <input type="checkbox" name="futbol">
+                    <input type="checkbox" class="form-input" name="futbol">
                     <span>Fútbol</span>
-                    <input type="checkbox" name="rugby">
+                    <input type="checkbox" class="form-input" name="rugby">
                     <span>Rugby</span>
-                    <input type="checkbox" name="voley">
+                    <input type="checkbox" class="form-input" name="voley">
                     <span>Voley</span>
                 </div>
             </fieldset>

@@ -1,36 +1,37 @@
 //Variables
-let input = document.getElementsByTagName("input");
+let form = document.getElementById("form");
+let formInputs = document.getElementsByClassName("form-input");
 let legend = document.getElementsByTagName("legend");
 let fieldset = document.getElementsByTagName("fieldset");
-let textarea = document.getElementsByTagName("textarea");
-let select = document.getElementsByTagName("select");
+let textarea = document.getElementById("textarea-form");
+let select = document.getElementById("select-form");
 let stylesButton = document.getElementById("estilos-btn");
 let stylesLink = document.getElementsByClassName('estilos-link')[0];
 let resetButton = document.getElementById('reset-btn');
 let randomButton = document.getElementById("random-btn");
 let recordarButton = document.getElementById("recordar-btn");
+let bonusDiv = document.getElementById("bonus-div");
 let click = 0
 
 // Botón que vacía el formulario
-resetButton.addEventListener("click", ()=> {
-    let form = document.getElementById("form");
+resetButton.addEventListener("click", () => {
     form.reset()
 });
 
 //Estilos del formulario
 if (stylesLink.hasAttribute('href')){
     //Input Focus
-    for (let i = 0; i < input.length; i++) {
-        input[i].addEventListener("focus", () => {
-            input[i].style.background = "#4A6963"
-            input[i].style.color = "#FFF"
-            if (i < 8) {
+    for (let i = 0; i < formInputs.length; i++) {
+        formInputs[i].addEventListener("focus", () => {
+            formInputs[i].style.background = "#4A6963"
+            formInputs[i].style.color = "#FFF"
+            if (i < 6) {
                 legend[0].style.background = "#2d3c39";
                 fieldset[0].style.background = "#A5BDB9";
-            } else if ((i >= 8) & (i <= 9)) {
+            } else if ((i >= 6) & (i <= 7)) {
                 legend[1].style.background = "#2d3c39";
                 fieldset[1].style.background = "#A5BDB9";
-            } else if ((i >= 9) & (i <= 17)){
+            } else if ((i >= 7) & (i <= 15)){
                 legend[2].style.background = "#2d3c39";
                 fieldset[2].style.background = "#A5BDB9";
             }
@@ -38,10 +39,10 @@ if (stylesLink.hasAttribute('href')){
     }
 
     //Input Blur
-    for (let i = 0; i < input.length; i++) {
-        input[i].addEventListener("blur", () => {
-            input[i].style.background = "#FFF"
-            input[i].style.color = "#4A6963"
+    for (let i = 0; i < formInputs.length; i++) {
+        formInputs[i].addEventListener("blur", () => {
+            formInputs[i].style.background = "#FFF"
+            formInputs[i].style.color = "#4A6963"
             legend[0].style.background = "#4b6963";
             fieldset[0].style.background = "#D6E1DF";
             legend[1].style.background = "#4b6963";
@@ -52,36 +53,28 @@ if (stylesLink.hasAttribute('href')){
     }
 
     //Textarea Focus
-    for (let i = 0; i < textarea.length; i++) {
-        textarea[i].addEventListener("focus", () => {
-            legend[0].style.background = "#2d3c39";
-            fieldset[0].style.background = "#A5BDB9";
-        });
-    }
+    textarea.addEventListener("focus", () => {
+        legend[0].style.background = "#2d3c39";
+        fieldset[0].style.background = "#A5BDB9";
+    });
 
     //Textarea Blur
-    for (let i = 0; i < textarea.length; i++) {
-        textarea[i].addEventListener("blur", () => {
-            legend[0].style.background = "#4b6963";
-            fieldset[0].style.background = "#D6E1DF";
-        });
-    }
+    textarea.addEventListener("blur", () => {
+        legend[0].style.background = "#4b6963";
+        fieldset[0].style.background = "#D6E1DF";
+    });
 
     //Select Focus
-    for (let i = 0; i < select.length; i++) {
-        select[i].addEventListener("focus", () => {
-            legend[0].style.background = "#2d3c39";
-            fieldset[0].style.background = "#A5BDB9";
-        });
-    }
+    select.addEventListener("focus", () => {
+        legend[0].style.background = "#2d3c39";
+        fieldset[0].style.background = "#A5BDB9";
+    });
 
     //Select Blur
-    for (let i = 0; i < select.length; i++) {
-        select[i].addEventListener("blur", () => {
-            legend[0].style.background = "#4b6963";
-            fieldset[0].style.background = "#D6E1DF";
-        });
-    }
+    select.addEventListener("blur", () => {
+        legend[0].style.background = "#4b6963";
+        fieldset[0].style.background = "#D6E1DF";
+    });
 }
 
 //Cambiar los estilos
@@ -111,7 +104,9 @@ randomButton.addEventListener("click", () => {
     }else if ((number > 50) & (number < 75)){
         stylesLink.setAttribute("href", "css/estilos.css");
     }else {
+        stylesLink.classList.toggle('estilos-link');
         stylesLink.removeAttribute('href');
+        bonusDiv.style.display = "none";
     }
 });
 
@@ -133,3 +128,6 @@ window.addEventListener("DOMContentLoaded", () => {
 
 //Bonus 3
 
+function Focus(){
+
+}
