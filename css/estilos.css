@@ -123,6 +123,7 @@ textarea{
 /* Borde de puntos, el cual es un hr que tiene display none en el html, por lo que si quitamos el estilo, ya no se muestra */
 .border-dotted{
     display: block !important;
+    margin: 0px auto;
     border: 15px dotted #A6C1B9;
     border-top: none;
     width: 30%;
@@ -213,10 +214,12 @@ textarea:focus-within{
     color: #FFF;
 }
 
-legend:focus{
-    background-color: #2d3c39 !important;
-}
 
 fieldset:focus-within{
     background-color: #A5BDB9;
+}
+
+fieldset:focus-within legend{
+    color: white;
+    background-color: #2b3d37;
 }

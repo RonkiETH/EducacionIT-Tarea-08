@@ -1,9 +1,243 @@
-body{
-    background-color: red;
+
+*{
+    box-sizing: border-box;
 }
 
+body{
+    background: rgb(2,0,36);
+    background: linear-gradient(180deg, rgb(12, 10, 41) 0%, rgb(0, 0, 0) 100%);
+}
+
+/* Estilos del formulario*/
+#form-div{
+    width: 70%;
+    margin: 0px auto;
+    
+}
+
+form{
+    width: 100%;
+    margin: 0px auto;
+    font-family: 'Roboto';
+    background-image: url('../img/futuro01.png');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+@font-face {
+    font-family: Azonix;
+    src: url('../fonts/Azonix.otf');
+    }
+
+h1{
+    color: #fff;
+    font-family: 'Azonix', sans-serif;
+    font-weight: 600;
+    font-size: 50pt;
+    border-bottom: 2px solid #7600a1;
+    border-top: 2px solid #7600a1;
+    padding-top: 15PX;
+    padding-bottom: 15PX;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+/* Estilos fieldset */
+.fieldset-container-1{
+    margin-top: 30px;
+}
+
+.fieldset-container-1,
+.fieldset-container-2{
+    margin-bottom: 30px;
+}
+
+.fieldset-container-3{
+    margin-top: 20px;
+    text-align: start;
+}
+
+fieldset{
+    padding: 30px;
+    border: 2px solid #7600a1;
+    box-shadow: 0px 0px 10px 5px #7600a1;
+    border-radius: 4px;
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 400;
+    color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+   
+}
+
+legend{
+    font-weight: 600;
+    font-size: 16pt;
+    text-align: left;
+    background-color: #7600a172  !important;
+    color: #fff;
+    padding: 10px;
+    border: 2px solid #7600a1;
+    border-radius: 5px;
+    height: 50px;
+    width: 200px;
+}
+
+legend span{
+    font-size: small;
+}
+
+form label{
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="submit"],
+input[type="button"],
+select,
+button,
+textarea{
+    width: 500px;
+    border: 1px solid #7600a1 !important;
+    border-radius: 0px;
+    padding: 10px;
+    font-family: 'Roboto';
+    color: #ffffff;
+    text-align: left;
+    font-size: medium;
+    background-color: #a646c8 !important;
+}
+
+input[type="submit"],
+input[type="button"]{
+    background-color: #7600a1 !important;
+    color: #ffffff;
+    font-size: medium;
+    border: 1px solid #7600a1 !important;
+    margin: 10px;
+    width: auto;
+    cursor: pointer;
+}
+
+select{
+    text-align: left;
+}
+
+input::placeholder{
+    color: #ffffff;
+    font-size: medium;
+}
+textarea{
+    min-width: 75%;
+    max-width: 75%;
+    min-height: 150px;
+    height: 150px;
+}
+
+/* Borde de puntos, el cual es un hr que tiene display none en el html, por lo que si quitamos el estilo, ya no se muestra */
+.border-dotted{
+    display: block !important;
+    border: 3px dashed #7600a100;
+    border-top: none;
+    width: 60%;
+}
+
+/* Ajuste de tamaños para los párrafos */
+.actividades-p{
+    font-size: small;
+}
+
+.terms{
+    text-align: start;
+    color: #fff;
+}
+
+.terms p{
+    font-size: small;
+}
+
+.conditions{
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+/* Efectos visuales*/
+input[type="submit"]:hover,
+input[type="button"]:hover,
+button:hover{
+    background-color: #D6E1DF;
+    color: #4D6D63;
+}
+
+h1::selection,
+legend::selection,
+legend span::selection,
+.terms span::selection{
+    background-color: #A8BEBC;
+}
+
+label::selection,
+input::selection,
+select::selection,
+fieldset span::selection,
+div p::selection,
+div::selection{
+    background-color: #B1C3C0;
+}
+
+/* Botón que cambia estilos */
 #bonus-div{
     display: block !important;
     text-align: start;
     margin: 30px;
 }
+
+#bonus-div select{
+    width: auto;
+    margin: 10px;
+    background-color: rgba(77, 109, 99, 0.5);
+    color: #A6C1B9;
+    font-size: medium;
+    border: 1px solid #4D6D63;
+    cursor: pointer;
+}
+
+#bonus-div option{
+    background-color: #4d6d63;
+}
+
+#bonus-div span{
+    color: #A6C1B9;
+    font-family: 'Roboto';
+}
+
+#random-btn{
+    color: transparent;
+    background-image: url('../img/dados.jpg');
+    background-position: center;
+    background-size: contain;
+}
+
+input:focus-within{
+    background-color: #4A6963;
+    color: #FFF;
+}
+
+textarea:focus-within{
+    background-color: #4A6963;
+    color: #FFF;
+}
+
+legend:focus{
+    background-color: #2d3c39 !important;
+}
+
+fieldset:focus-within{
+    background-color: #A5BDB9;
+}
+

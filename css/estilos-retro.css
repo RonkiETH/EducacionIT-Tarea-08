@@ -1,9 +1,237 @@
-body{
-    background-color: blue;
+
+*{
+    box-sizing: border-box;
 }
 
+body{
+    background: rgb(2,0,36);
+background: linear-gradient(0deg, rgb(192, 192, 192) 35%, rgb(255, 255, 255) 100%);
+background-image: url("../img/201-2012747_no-caption-provided-street-fighter-ryu-pixel.png"); 
+background-repeat: no-repeat;
+background-position: right;
+}
+
+/* Estilos del formulario*/
+#form-div{
+    width: 40%;
+    margin: 0px auto;
+    /* display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap; */
+}
+
+form{
+    width: 100%;
+    margin: 0px auto;
+    font-family: 'Press Start 2P', cursive;
+    flex-wrap: wrap;
+}
+
+h1{
+    color: #000000;
+    font-family: 'Permanent Marker', cursive;
+    font-weight: 600;
+    font-size: 50pt;
+    padding-top: 15PX;
+    padding-bottom: 15PX;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* Estilos fieldset */
+.fieldset-container-1{
+    margin-top: 30px;
+}
+
+.fieldset-container-1,
+.fieldset-container-2{
+    margin-bottom: 30px;
+}
+
+.fieldset-container-3{
+    margin-top: 20px;
+    text-align: start;
+}
+
+fieldset{
+    padding: 30px;
+    background-color: #bc943e !important;
+    border-radius: 4px;
+    font-family: 'Press Start 2P', cursive;
+    font-weight: 400;
+    color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+legend{
+    font-weight: 600;
+    font-size: 18pt;
+    text-align: center;
+    background-color: #ffffff  !important;
+    color: #bc943e;
+    padding: 10px;
+    border: 2px solid #bc943e;
+    border-radius: 5px;
+    height: 60px;
+    width: 550px;
+}
+
+legend span{
+    font-size: 18pt;
+}
+
+form label{
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="submit"],
+input[type="button"],
+select,
+button,
+textarea{
+    width: 500px;
+    border: 1px solid #bc943e !important;
+    border-radius: 0px;
+    padding: 10px;
+    font-family: 'Roboto';
+    color: #ffffff;
+    text-align: left;
+    font-size: medium;
+    background-color: #dac69c !important;
+}
+
+input[type="submit"],
+input[type="button"]{
+    background-color: #bc943e !important;
+    color: white;
+    font-size: medium;
+    border: 1px solid #bc943e !important;
+    margin: 10px;
+    width: auto;
+    cursor: pointer;
+}
+
+select{
+    text-align: left;
+}
+
+input::placeholder{
+    color: #ffffff;
+    font-size: medium;
+}
+textarea{
+    min-width: 75%;
+    max-width: 75%;
+    min-height: 150px;
+    height: 150px;
+}
+
+/* Borde de puntos, el cual es un hr que tiene display none en el html, por lo que si quitamos el estilo, ya no se muestra */
+.border-dotted{
+    display: block !important;
+    border: 3px dashed #7600a100;
+    border-top: none;
+    width: 60%;
+}
+
+/* Ajuste de tamaños para los párrafos */
+.actividades-p{
+    font-size: small;
+}
+
+.terms{
+    text-align: start;
+    color: #bc943e;
+}
+
+.terms p{
+    font-size: small;
+}
+
+.conditions{
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+/* Efectos visuales*/
+input[type="submit"]:hover,
+input[type="button"]:hover,
+button:hover{
+    background-color: #D6E1DF;
+    color: #4D6D63;
+}
+
+h1::selection,
+legend::selection,
+legend span::selection,
+.terms span::selection{
+    background-color: #A8BEBC;
+}
+
+label::selection,
+input::selection,
+select::selection,
+fieldset span::selection,
+div p::selection,
+div::selection{
+    background-color: #B1C3C0;
+}
+
+/* Botón que cambia estilos */
 #bonus-div{
     display: block !important;
     text-align: start;
     margin: 30px;
 }
+
+#bonus-div select{
+    width: auto;
+    margin: 10px;
+    background-color: rgba(77, 109, 99, 0.5);
+    color: #A6C1B9;
+    font-size: medium;
+    border: 1px solid #4D6D63;
+    cursor: pointer;
+}
+
+#bonus-div option{
+    background-color: #4d6d63;
+}
+
+#bonus-div span{
+    color: #A6C1B9;
+    font-family: 'Roboto';
+}
+
+#random-btn{
+    color: transparent;
+    background-image: url('../img/dados.jpg');
+    background-position: center;
+    background-size: contain;
+}
+
+input:focus-within{
+    background-color: #4A6963;
+    color: #FFF;
+}
+
+textarea:focus-within{
+    background-color: #4A6963;
+    color: #FFF;
+}
+
+legend:focus{
+    background-color: #2d3c39 !important;
+}
+
+fieldset:focus-within{
+    background-color: #A5BDB9;
+}
+
