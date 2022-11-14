@@ -10,13 +10,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <!-- Estilos -->
     <link rel="stylesheet" href="css/estilos.css" class="estilos-link">
-    <!-- <link rel="stylesheet" href="css/estilos-retro.css" class="estilos-link">
-    <link rel="stylesheet" href="css/estilos-futuro.css" class="estilos-link"> -->
-    <!-- <link rel="stylesheet" href="css/sin-estilo.css" class="estilos-link"> -->
     <title>Afiliación</title>
 </head>
 <body>
-    <div id="bonus-div">
+    
+    <div id="bonus-div" style="display: none;">
         <!-- Punto final -->
         <input type="button" value="Cambiar estilo" id="estilos-btn">
         <!-- Bonus 1 -->
@@ -31,16 +29,16 @@
             <option value="sin-estilo">Sin Estilo</option>
         </select>
         <!-- Bonus 4 -->
-        <input type="radio" class="bonus-4" name="bonus-4" id="original-4" checked>
+        <input type="radio" class="bonus-4" name="bonus-4" value="original">
         <span>Original</span> 
-        <input type="radio" class="bonus-4" name="bonus-4" id="retro-4">
+        <input type="radio" class="bonus-4" name="bonus-4" value="retro">
         <span>Retro</span>
-        <input type="radio" class="bonus-4" name="bonus-4" id="futuro-4">
+        <input type="radio" class="bonus-4" name="bonus-4" value="futuro">
         <span>Futuro</span> 
-        <input type="radio" class="bonus-4" name="bonus-4" id="sin-estilo4">
+        <input type="radio" class="bonus-4" name="bonus-4" value="sin-estilo">
         <span>Sin Estilo</span> 
     </div>
-    <!-- <div id="form-div"> -->
+    <div id="form-div">
     <form id="form">
         <h1>Vení al Gym! 💪🏼</h1>
         <div class="fieldset-container-1">
@@ -140,11 +138,10 @@
             </div>
             <p>*: campo obligatorio.</p>
         </div>
-        
-        <input type="submit" value="Iniciar afiliación">
-        <input type="button" value="Restablecer" id="reset-btn">
+        <button type="submit">Iniciar afiliación</button>
+        <button type="reset">Restablecer</button>
     </form>
-    <!-- </div> -->
+    </div>
     <script src="js/index.js" id="script"></script>
 </body>
 </html>

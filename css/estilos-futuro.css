@@ -2,7 +2,7 @@ body{
     background-color: red;
 }
 
-.btn-div{
+#bonus-div{
     display: block !important;
     text-align: start;
     margin: 30px;

@@ -16,7 +16,7 @@ body{
 }
 
 form{
-    width: 50%;
+    width: 100%;
     margin: 0px auto;
     font-family: 'Roboto';
 }
@@ -79,6 +79,7 @@ input[type="email"],
 input[type="submit"],
 input[type="button"],
 select,
+button,
 textarea{
     width: 75%;
     border: 1px solid #587A6F;
@@ -91,7 +92,8 @@ textarea{
 }
 
 input[type="submit"],
-input[type="button"]{
+input[type="button"],
+button{
     background-color: rgba(77, 109, 99, 0.5);
     color: #A6C1B9;
     font-size: medium;
@@ -146,7 +148,8 @@ textarea{
 
 /* Efectos visuales*/
 input[type="submit"]:hover,
-input[type="button"]:hover{
+input[type="button"]:hover,
+button:hover{
     background-color: #D6E1DF;
     color: #4D6D63;
 }
@@ -200,3 +203,20 @@ div::selection{
     background-size: contain;
 }
 
+input:focus-within{
+    background-color: #4A6963;
+    color: #FFF;
+}
+
+textarea:focus-within{
+    background-color: #4A6963;
+    color: #FFF;
+}
+
+legend:focus{
+    background-color: #2d3c39 !important;
+}
+
+fieldset:focus-within{
+    background-color: #A5BDB9;
+}
